@@ -6,11 +6,11 @@
 import re
 def leiaInt():
     a=(input("Insira um número:"))
-    if re.match('^\d+$', a) or re.match('^\d+\.\d+$', a):
+    if re.match('^\d+$', a):
         print("Valor digitado:",a)
     elif (a == ""):
         a=0
         print("Campo em branco, valor",a,"atribuído.")
     else:
-        print("O valor inserido é uma string, inválido!")
+        print("O valor inserido é inválido!")
 leiaInt()
